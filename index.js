@@ -10,7 +10,7 @@ app.get('/jar', async (req, res) => {
 
         const prompt = encodeURIComponent(`you are now your name is Jarvis and loyal to Denise and interact and like normal conversation and speaking tagalog and short response and if not related the topic just answer like human normal conversation and ask user start with >${ask}`);
         
-        const response = await axios.get(`https://gptmich-8e6c1a68af73.herokuapp.com/gptconvo?prompt=${prompt}&id=${id}`);
+        const response = await axios.get(`https://gptprivate-dcc277190358.herokuapp.com/gptconvo?ask=${prompt}&id=${id}`);
         const responseData = response.data;
 
         res.json(responseData);
